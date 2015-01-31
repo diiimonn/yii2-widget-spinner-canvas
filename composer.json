@@ -1,0 +1,18 @@
+{
+    "name": "diiimonn/yii2-widget-spinner",
+    "description": "A widget to render canvas with animated loading spinners",
+    "keywords": ["yii2", "extension", "widget", "spinner", "loading", "canvas", "jquery"],
+    "homepage": "https://github.com/diiimonn/yii2-widget-spinner",
+    "type": "yii2-extension",
+    "authors": [
+        {
+            "name": "Dmitriy Gavrilenko",
+            "email": "diiimonn@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "diiimonn\\spinner\\": ""
+        }
+    }
+}
