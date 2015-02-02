@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "diiimonn/spinners": "dev-master"
+        "staaky/spinners": "dev-master"
     },
     "repositories": [
         {
