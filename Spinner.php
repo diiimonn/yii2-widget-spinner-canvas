@@ -40,8 +40,7 @@ class Spinner extends Widget
     public function registerClientScript()
     {
         $view = $this->getView();
-        $asset = SpinnerAsset::register($view);
-        $asset->js[] = 'spinner.min.js';
+        SpinnerAsset::register($view);
         $js = 'window["' . $this->id . 'Spinner"] = Spinners.create("#' . $this->id . '-spinner", ' . Json::encode(ArrayHelper::merge($this->scriptOptionsDefault, $this->scriptOptions)) . ').play().center();';
         $view->registerJs($js);
     }

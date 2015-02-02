@@ -9,14 +9,13 @@ use yii\web\AssetBundle;
  */
 class SpinnerAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/canvas-spinners';
+    public $sourcePath = '@bower/canvas-spinners/js';
 
     public $depends = [
         'yii\web\JqueryAsset'
     ];
 
     public $js = [
-        'js/excanvas/excanvas.js',
-        'js/spinners/spinners.min.js',
+        'spinners/spinners.min.js',
     ];
 }
