@@ -6,13 +6,13 @@ A widget to render canvas with animated loading spinners
 To install with composer:
 
 ```
-$ php composer.phar require diiimonn/yii2-widget-spinner "*"
+$ php composer.phar require diiimonn/yii2-widget-spinner "dev-master"
 ```
 
 or add
 
 ```
-"diiimonn/yii2-widget-spinner": "*"
+"diiimonn/yii2-widget-spinner": "dev-master"
 ```
 
 to the ```require``` section of your `composer.json` file.

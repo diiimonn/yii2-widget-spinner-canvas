@@ -10,6 +10,22 @@
             "email": "diiimonn@gmail.com"
         }
     ],
+    "require": {
+        "diiimonn/spinners": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "diiimonn/spinners",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/diiimonn/spinners",
+                    "reference": "master"
+                }
+            }
+        }
+    ],
     "autoload": {
         "psr-4": {
             "diiimonn\\spinner\\": ""
