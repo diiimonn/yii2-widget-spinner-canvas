@@ -15,16 +15,8 @@
     },
     "repositories": [
         {
-            "type": "package",
-            "package": {
-                "name": "diiimonn/spinners",
-                "version": "3.0.0",
-                "source": {
-                    "type": "git",
-                    "url": "https://github.com/diiimonn/spinners",
-                    "reference": "master"
-                }
-            }
+            "type": "vcs",
+            "url": "https://github.com/diiimonn/spinners"
         }
     ],
     "autoload": {
