@@ -1,5 +1,5 @@
 <?php
-namespace diiimonn\spinner;
+namespace diiimonn\widgets;
 
 use Yii;
 use yii\base\Widget;
@@ -9,7 +9,7 @@ use yii\helpers\ArrayHelper;
 
 /**
  * Class Spinner
- * @package diiimonn\spinner
+ * @package diiimonn\widgets
  */
 class Spinner extends Widget
 {

@@ -1,11 +1,11 @@
 <?php
-namespace diiimonn\spinner;
+namespace diiimonn\widgets;
 
 use yii\web\AssetBundle;
 
 /**
  * Class SpinnerAsset
- * @package diiimonn\spinner
+ * @package diiimonn\widgets
  */
 class SpinnerAsset extends AssetBundle
 {
