@@ -1,4 +1,4 @@
-# yii2-widget-spinner
+# yii2-widget-spinner-canvas
 A widget to render canvas with animated loading spinners
 
 ## Installation
@@ -6,13 +6,13 @@ A widget to render canvas with animated loading spinners
 To install with composer:
 
 ```
-$ php composer.phar require diiimonn/yii2-widget-spinner "dev-master"
+$ php composer.phar require diiimonn/yii2-widget-spinner-canvas "dev-master"
 ```
 
 or add
 
 ```
-"diiimonn/yii2-widget-spinner": "dev-master"
+"diiimonn/yii2-widget-spinner-canvas": "dev-master"
 ```
 
 to the ```require``` section of your `composer.json` file.
@@ -20,11 +20,11 @@ to the ```require``` section of your `composer.json` file.
 ## Usage
 
 ```php
-use diiimonn\spinner\Spinner;
+use diiimonn\widgets\SpinnerCanvas;
 
 ...
 
-<?= Spinner::widget([
+<?= SpinnerCanvas::widget([
     'options' => [
         'class' => 'spinner',
     ],
