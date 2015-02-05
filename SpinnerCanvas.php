@@ -32,10 +32,16 @@ class SpinnerCanvas extends Widget
      */
     protected $asset;
 
+    public function init()
+    {
+        parent::init();
+
+        $this->registerAsset();
+        $this->registerClientScript();
+    }
+
     public function run()
     {
-        $this->registerClientScript();
-
         $this->options['id'] = $this->id;
 
         return Html::tag('div', Html::tag('div', '', [
