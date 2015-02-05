@@ -6,12 +6,13 @@ use yii\base\Widget;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\helpers\ArrayHelper;
+use diiimonn\assets\SpinnerCanvasAsset;
 
 /**
- * Class Spinner
+ * Class SpinnerCanvas
  * @package diiimonn\widgets
  */
-class Spinner extends Widget
+class SpinnerCanvas extends Widget
 {
     public $options = [];
     public $scriptOptions = [];
@@ -26,6 +27,11 @@ class Spinner extends Widget
         'color' => '#666666',
     ];
 
+    /**
+     * @var \yii\web\AssetBundle
+     */
+    protected $asset;
+
     public function run()
     {
         $this->registerClientScript();
@@ -37,11 +43,14 @@ class Spinner extends Widget
         ]), $this->options);
     }
 
+    public function registerAsset()
+    {
+        $this->asset = SpinnerCanvasAsset::register($this->getView());
+    }
+
     public function registerClientScript()
     {
-        $view = $this->getView();
-        SpinnerAsset::register($view);
         $js = 'window["' . $this->id . 'Spinner"] = Spinners.create("#' . $this->id . '-spinner", ' . Json::encode(ArrayHelper::merge($this->scriptOptionsDefault, $this->scriptOptions)) . ').play().center();';
-        $view->registerJs($js);
+        $this->getView()->registerJs($js);
     }
 }

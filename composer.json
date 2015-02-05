@@ -1,8 +1,8 @@
 {
-    "name": "diiimonn/yii2-widget-spinner",
+    "name": "diiimonn/yii2-widget-spinner-canvas",
     "description": "A widget to render canvas with animated loading spinners",
-    "keywords": ["yii2", "extension", "widget", "spinner", "loading", "canvas", "jquery"],
-    "homepage": "https://github.com/diiimonn/yii2-widget-spinner",
+    "keywords": ["spinner", "loading", "canvas", "jquery", "yii2", "extension", "widget"],
+    "homepage": "https://github.com/diiimonn/yii2-widget-spinner-canvas",
     "type": "yii2-extension",
     "version": "1.0.0",
     "authors": [
@@ -12,7 +12,7 @@
         }
     ],
     "require": {
-        "bower-asset/canvas-spinners": ">=1.0.0"
+        "diiimonn/yii2-asset-spinner-canvas": "dev-master"
     },
     "autoload": {
         "psr-4": {
