@@ -5,6 +5,7 @@
     "homepage": "https://github.com/diiimonn/yii2-widget-spinner-canvas",
     "type": "yii2-extension",
     "version": "1.0.0",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Dmitriy Gavrilenko",
