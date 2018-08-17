@@ -13,11 +13,17 @@
         }
     ],
     "require": {
-        "diiimonn/yii2-asset-spinner-canvas": "*"
+        "diiimonn/yii2-asset-spinner-canvas": "dev-v2"
     },
     "autoload": {
         "psr-4": {
             "diiimonn\\widgets\\": ""
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/diiimonn/yii2-asset-spinner-canvas"
+        }
+    ]
 }
